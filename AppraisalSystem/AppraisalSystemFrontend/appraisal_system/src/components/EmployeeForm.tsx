@@ -33,7 +33,6 @@ const EmployeeForm = ({ employeeId }: { employeeId: number }) => {
 
   return (
     <>
- <div className="relative max-w-[1200px] mx-auto p-4 space-x-3">
   <button className='w-[370px] h-[62px] bg-[#1b334f] rounded-[10px] border-none absolute top-[30px] left-[50%] transform -translate-x-1/2 z-[14] pointer'>
     <span className="flex w-[329px] h-[43px] justify-center items-start font-['Inter'] text-[32px] font-semibold leading-[38.727px] text-[#fff] absolute top-[11px] left-[23px] text-center whitespace-nowrap z-[22]">
       {employeeData.name}
@@ -120,7 +119,7 @@ const EmployeeForm = ({ employeeId }: { employeeId: number }) => {
 
     </div>
   </div>
-</div>
+
 
     </>
   );

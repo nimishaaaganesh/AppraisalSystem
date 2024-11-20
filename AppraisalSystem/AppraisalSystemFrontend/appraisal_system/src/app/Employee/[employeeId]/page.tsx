@@ -1,26 +1,26 @@
-'use client'; // Ensure this is a client-side component
+'use client'; 
 
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'next/navigation'; // Use useParams from next/navigation
+import { useParams } from 'next/navigation'; 
 import EmployeeForm from '@/components/EmployeeForm';
 
 const EmployeeDetails: React.FC = () => {
-  const { employeeId } = useParams(); // Using useParams to access the dynamic route parameter
+  const { employeeId } = useParams(); 
   const [id, setId] = useState<number | null>(null);
 
   useEffect(() => {
     if (employeeId) {
       setId(Number(employeeId));
     }
-  }, [employeeId]); // Effect depends on employeeId
+  }, [employeeId]); 
 
   if (id === null) {
-    return <div>Loading...</div>; // Render loading state while employeeId is not available
+    return <div>Loading...</div>; 
   }
 
   return (
-    <div className="bg-[#25DACB] bg-cover h-screen relative">
-      <EmployeeForm employeeId={id} /> {/* Pass employeeId to the form */}
+    <div className="main-container w-[1088px] h-[583px] bg-[#25DACB] bg-cover relative overflow-x-hidden">
+      <EmployeeForm employeeId={id} /> 
     </div>
   );
 };

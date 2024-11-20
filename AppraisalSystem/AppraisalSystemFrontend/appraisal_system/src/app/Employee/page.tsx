@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Link from "next/link";
-import EmployeeForm from "@/components/EmployeeForm";
+import { PiSignOutBold } from "react-icons/pi";
 
 interface Employee {
   id: number;
@@ -16,9 +16,7 @@ export default function Main() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [searchTerm, setSearchTerm] = useState("");
-  const [selectedEmployeeId, setSelectedEmployeeId] = React.useState<
-    number | null
-  >(null);
+   
 
   useEffect(() => {
     axios
@@ -47,8 +45,8 @@ export default function Main() {
 
   return (
     <div className="main-container w-[1088px] h-[583px] bg-[#25DACB] bg-cover relative overflow-x-hidden">
-      <div className="w-[855px] h-[151px] bg-[#1b334f] rounded-[10px] absolute top-[122px] left-[64px] z-[12]">
-        <div className="flex w-[779px] h-[38.725px] justify-between items-center relative z-[91] mt-[25px] mr-0 mb-0 ml-[41px]">
+      <div className="w-[855px] h-[151px] bg-[#1b334f] rounded-[10px] absolute top-[50px] left-[64px] z-[12]">
+        <div className="flex w-[779px] h-[38.725px] justify-between items-center relative z-[91] mt-[25px] mr-0 mb-0 ml-[40px]">
           <span className="flex w-[171px] h-[33.248px] justify-center items-start shrink-0 font-['Inter'] text-[20px] font-semibold leading-[24.205px] text-[#fff] relative text-center whitespace-nowrap z-[15]">
             List of Employees
           </span>
@@ -70,8 +68,8 @@ export default function Main() {
         ) : error ? (
           <div>{error}</div>
         ) : (
-          <div className="w-[614px] h-[26.321px] relative z-[17] mt-[33.248px] mr-0 mb-0 ml-[106px]">
-            <div className="flex w-full justify-between items-center">
+          <div className="w-[614px] h-[26.321px] relative z-[17] mt-[33.248px] mr-0 mb-0 ">
+            <div className="flex w-full justify-between items-center ml-[80px]">
               <span className="flex w-[15px] h-[26.321px] justify-center items-start font-['Inter'] text-[16px] font-semibold leading-[19.364px] text-[#fff]">
                 Id
               </span>
@@ -89,13 +87,13 @@ export default function Main() {
               filteredEmployees.map((employee) => (
                 <div
                   key={employee.id}
-                  className="flex w-[855px] justify-between items-center mt-4 bg-white rounded-lg  shadow-md p-4"
+                  className="flex w-[855px]  mt-8  bg-white rounded-lg  shadow-md p-4 "
                 >
                   <div
                     key={employee.id}
                     className="flex w-full justify-between items-center mt-4"
                   >
-                    <span className="flex w-[15px] h-[26.321px] justify-center items-start font-['Inter'] text-[16px] font-normal leading-[19.364px] text-[#000]">
+                    <span className="flex w-[15px] h-[26.321px] justify-center items-start font-['Inter'] text-[16px] font-normal leading-[19.364px] text-[#000] ml-[75px]">
                       {employee.id}
                     </span>
                     <span className="flex w-[65px] h-[26.321px] justify-center items-start font-['Inter'] text-[16px] font-normal leading-[19.364px] text-[#000]">
@@ -108,12 +106,7 @@ export default function Main() {
                       {employee.systemRole || " -- "}
                     </span>
                     <Link href={`/Employee/${employee.id}`}>
-                      <img
-                        src="/employeedetails.png" 
-                        alt={`View ${employee.name}'s Details`}
-                        className="cursor-pointer" 
-                        style={{ width: "50px", height: "50px" }}
-                      />
+                    <PiSignOutBold style={{ fontSize: '30px' }} />
                     </Link>
                   </div>
                 </div>

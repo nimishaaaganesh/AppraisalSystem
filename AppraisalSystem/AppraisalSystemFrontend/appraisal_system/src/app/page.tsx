@@ -13,7 +13,7 @@ export default function Dashboard() {
             Employees
           </h3>
           <button className="bg-[#25DACB] text-black font-semibold py-2 px-6 rounded-md shadow absolute bottom-4 right-4">      
-                  <Link href="/EmployeeDetails">View</Link>
+                  <Link href="/Employee">View</Link>
           </button>
         </div>
 

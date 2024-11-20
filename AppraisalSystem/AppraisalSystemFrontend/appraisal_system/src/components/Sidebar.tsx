@@ -17,7 +17,7 @@ const Sidebar = () => {
             </div>
           </li>
           <li>
-          <Link href='/EmployeeDetails'>
+          <Link href='/'>
             <div className="flex space-x-8  ">
               <img
                 src="/images/menu.png"
@@ -29,7 +29,7 @@ const Sidebar = () => {
           </Link>
           </li>
           <li>
-            <Link href='/EmployeeDetails'>
+            <Link href='/Employee'>
             <div className="flex space-x-8">
               <img
                 src="/images/empoyee.png"
