@@ -19,7 +19,7 @@ const EmployeeDetails: React.FC = () => {
   }
 
   return (
-    <div className="main-container w-[1088px] h-[583px] bg-[#25DACB] bg-cover relative overflow-x-hidden">
+    <div className=" h-full bg-[#25DACB] bg-cover">
       <EmployeeForm employeeId={id} /> 
     </div>
   );

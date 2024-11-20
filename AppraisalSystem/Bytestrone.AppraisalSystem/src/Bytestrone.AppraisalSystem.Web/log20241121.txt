@@ -711,3 +711,195 @@ INNER JOIN "EmployeeLevels" AS e1 ON e."EmployeeLevelId" = e1."Id"
 2024-11-21 00:50:01.067 +05:30 [INF] Handled ListEmployeesQuery with Ardalis.Result.Result`1[System.Collections.Generic.IEnumerable`1[Bytestrone.AppraisalSystem.UseCases.Employees.EmployeeDTO]] in 7 ms
 2024-11-21 00:50:01.069 +05:30 [INF] Executed endpoint 'HTTP: GET /Employees'
 2024-11-21 00:50:01.069 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/Employees - 200 null application/json; charset=utf-8 11.0818ms
+2024-11-21 00:58:10.262 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/Employees - null null
+2024-11-21 00:58:10.264 +05:30 [INF] CORS policy execution successful.
+2024-11-21 00:58:10.265 +05:30 [INF] Executing endpoint 'HTTP: GET /Employees'
+2024-11-21 00:58:10.266 +05:30 [INF] Handling ListEmployeesQuery
+2024-11-21 00:58:10.293 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Address", e."CreatedAt", e."Email", e."EmployeeLevelId", e."EmployeeRoleId", e."IsActive", e."JoinDate", e."ModifiedAt", e."Name", e."PhoneNumber", e0."Id", e0."Name", e1."Id", e1."Name"
+FROM "Employees" AS e
+INNER JOIN "EmployeeRoles" AS e0 ON e."EmployeeRoleId" = e0."Id"
+INNER JOIN "EmployeeLevels" AS e1 ON e."EmployeeLevelId" = e1."Id"
+2024-11-21 00:58:10.295 +05:30 [INF] Handled ListEmployeesQuery with Ardalis.Result.Result`1[System.Collections.Generic.IEnumerable`1[Bytestrone.AppraisalSystem.UseCases.Employees.EmployeeDTO]] in 29 ms
+2024-11-21 00:58:10.296 +05:30 [INF] Executed endpoint 'HTTP: GET /Employees'
+2024-11-21 00:58:10.296 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/Employees - 200 null application/json; charset=utf-8 34.2835ms
+2024-11-21 00:58:15.489 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/Employees/1 - null null
+2024-11-21 00:58:15.490 +05:30 [INF] CORS policy execution successful.
+2024-11-21 00:58:15.490 +05:30 [INF] Executing endpoint 'HTTP: GET /Employees/{EmployeeId:int}'
+2024-11-21 00:58:15.490 +05:30 [INF] Handling GetEmployeeQuery
+2024-11-21 00:58:15.490 +05:30 [INF] Property EmployeeId : 1
+2024-11-21 00:58:15.494 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__EmployeeId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Address", e."CreatedAt", e."Email", e."EmployeeLevelId", e."EmployeeRoleId", e."IsActive", e."JoinDate", e."ModifiedAt", e."Name", e."PhoneNumber", e0."Id", e0."Name", e1."Id", e1."Name"
+FROM "Employees" AS e
+INNER JOIN "EmployeeRoles" AS e0 ON e."EmployeeRoleId" = e0."Id"
+INNER JOIN "EmployeeLevels" AS e1 ON e."EmployeeLevelId" = e1."Id"
+WHERE e."Id" = @__EmployeeId_0
+LIMIT 1
+2024-11-21 00:58:15.494 +05:30 [INF] Handled GetEmployeeQuery with Ardalis.Result.Result`1[Bytestrone.AppraisalSystem.UseCases.Employees.EmployeeDTO] in 3 ms
+2024-11-21 00:58:15.495 +05:30 [INF] Executed endpoint 'HTTP: GET /Employees/{EmployeeId:int}'
+2024-11-21 00:58:15.495 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/Employees/1 - 200 null application/json; charset=utf-8 6.0822ms
+2024-11-21 00:58:15.496 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/Employees/1 - null null
+2024-11-21 00:58:15.496 +05:30 [INF] CORS policy execution successful.
+2024-11-21 00:58:15.496 +05:30 [INF] Executing endpoint 'HTTP: GET /Employees/{EmployeeId:int}'
+2024-11-21 00:58:15.496 +05:30 [INF] Handling GetEmployeeQuery
+2024-11-21 00:58:15.496 +05:30 [INF] Property EmployeeId : 1
+2024-11-21 00:58:15.498 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__EmployeeId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Address", e."CreatedAt", e."Email", e."EmployeeLevelId", e."EmployeeRoleId", e."IsActive", e."JoinDate", e."ModifiedAt", e."Name", e."PhoneNumber", e0."Id", e0."Name", e1."Id", e1."Name"
+FROM "Employees" AS e
+INNER JOIN "EmployeeRoles" AS e0 ON e."EmployeeRoleId" = e0."Id"
+INNER JOIN "EmployeeLevels" AS e1 ON e."EmployeeLevelId" = e1."Id"
+WHERE e."Id" = @__EmployeeId_0
+LIMIT 1
+2024-11-21 00:58:15.498 +05:30 [INF] Handled GetEmployeeQuery with Ardalis.Result.Result`1[Bytestrone.AppraisalSystem.UseCases.Employees.EmployeeDTO] in 1 ms
+2024-11-21 00:58:15.498 +05:30 [INF] Executed endpoint 'HTTP: GET /Employees/{EmployeeId:int}'
+2024-11-21 00:58:15.498 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/Employees/1 - 200 null application/json; charset=utf-8 2.6465ms
+2024-11-21 01:03:01.064 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/Employees/1 - null null
+2024-11-21 01:03:01.064 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/Employees/1 - null null
+2024-11-21 01:03:01.065 +05:30 [INF] CORS policy execution successful.
+2024-11-21 01:03:01.065 +05:30 [INF] CORS policy execution successful.
+2024-11-21 01:03:01.066 +05:30 [INF] Executing endpoint 'HTTP: GET /Employees/{EmployeeId:int}'
+2024-11-21 01:03:01.066 +05:30 [INF] Executing endpoint 'HTTP: GET /Employees/{EmployeeId:int}'
+2024-11-21 01:03:01.067 +05:30 [INF] Handling GetEmployeeQuery
+2024-11-21 01:03:01.067 +05:30 [INF] Handling GetEmployeeQuery
+2024-11-21 01:03:01.067 +05:30 [INF] Property EmployeeId : 1
+2024-11-21 01:03:01.067 +05:30 [INF] Property EmployeeId : 1
+2024-11-21 01:03:01.079 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__EmployeeId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Address", e."CreatedAt", e."Email", e."EmployeeLevelId", e."EmployeeRoleId", e."IsActive", e."JoinDate", e."ModifiedAt", e."Name", e."PhoneNumber", e0."Id", e0."Name", e1."Id", e1."Name"
+FROM "Employees" AS e
+INNER JOIN "EmployeeRoles" AS e0 ON e."EmployeeRoleId" = e0."Id"
+INNER JOIN "EmployeeLevels" AS e1 ON e."EmployeeLevelId" = e1."Id"
+WHERE e."Id" = @__EmployeeId_0
+LIMIT 1
+2024-11-21 01:03:01.081 +05:30 [INF] Handled GetEmployeeQuery with Ardalis.Result.Result`1[Bytestrone.AppraisalSystem.UseCases.Employees.EmployeeDTO] in 14 ms
+2024-11-21 01:03:01.083 +05:30 [INF] Executed endpoint 'HTTP: GET /Employees/{EmployeeId:int}'
+2024-11-21 01:03:01.083 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/Employees/1 - 200 null application/json; charset=utf-8 19.0591ms
+2024-11-21 01:03:01.084 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__EmployeeId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Address", e."CreatedAt", e."Email", e."EmployeeLevelId", e."EmployeeRoleId", e."IsActive", e."JoinDate", e."ModifiedAt", e."Name", e."PhoneNumber", e0."Id", e0."Name", e1."Id", e1."Name"
+FROM "Employees" AS e
+INNER JOIN "EmployeeRoles" AS e0 ON e."EmployeeRoleId" = e0."Id"
+INNER JOIN "EmployeeLevels" AS e1 ON e."EmployeeLevelId" = e1."Id"
+WHERE e."Id" = @__EmployeeId_0
+LIMIT 1
+2024-11-21 01:03:01.084 +05:30 [INF] Handled GetEmployeeQuery with Ardalis.Result.Result`1[Bytestrone.AppraisalSystem.UseCases.Employees.EmployeeDTO] in 17 ms
+2024-11-21 01:03:01.084 +05:30 [INF] Executed endpoint 'HTTP: GET /Employees/{EmployeeId:int}'
+2024-11-21 01:03:01.084 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/Employees/1 - 200 null application/json; charset=utf-8 20.7622ms
+2024-11-21 01:19:38.121 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/Employees/1 - null null
+2024-11-21 01:19:38.125 +05:30 [INF] CORS policy execution successful.
+2024-11-21 01:19:38.126 +05:30 [INF] Executing endpoint 'HTTP: GET /Employees/{EmployeeId:int}'
+2024-11-21 01:19:38.133 +05:30 [INF] Handling GetEmployeeQuery
+2024-11-21 01:19:38.134 +05:30 [INF] Property EmployeeId : 1
+2024-11-21 01:19:38.151 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__EmployeeId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Address", e."CreatedAt", e."Email", e."EmployeeLevelId", e."EmployeeRoleId", e."IsActive", e."JoinDate", e."ModifiedAt", e."Name", e."PhoneNumber", e0."Id", e0."Name", e1."Id", e1."Name"
+FROM "Employees" AS e
+INNER JOIN "EmployeeRoles" AS e0 ON e."EmployeeRoleId" = e0."Id"
+INNER JOIN "EmployeeLevels" AS e1 ON e."EmployeeLevelId" = e1."Id"
+WHERE e."Id" = @__EmployeeId_0
+LIMIT 1
+2024-11-21 01:19:38.153 +05:30 [INF] Handled GetEmployeeQuery with Ardalis.Result.Result`1[Bytestrone.AppraisalSystem.UseCases.Employees.EmployeeDTO] in 19 ms
+2024-11-21 01:19:38.153 +05:30 [INF] Executed endpoint 'HTTP: GET /Employees/{EmployeeId:int}'
+2024-11-21 01:19:38.154 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/Employees/1 - 200 null application/json; charset=utf-8 32.632ms
+2024-11-21 01:19:38.156 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/Employees/1 - null null
+2024-11-21 01:19:38.156 +05:30 [INF] CORS policy execution successful.
+2024-11-21 01:19:38.156 +05:30 [INF] Executing endpoint 'HTTP: GET /Employees/{EmployeeId:int}'
+2024-11-21 01:19:38.156 +05:30 [INF] Handling GetEmployeeQuery
+2024-11-21 01:19:38.156 +05:30 [INF] Property EmployeeId : 1
+2024-11-21 01:19:38.159 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__EmployeeId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Address", e."CreatedAt", e."Email", e."EmployeeLevelId", e."EmployeeRoleId", e."IsActive", e."JoinDate", e."ModifiedAt", e."Name", e."PhoneNumber", e0."Id", e0."Name", e1."Id", e1."Name"
+FROM "Employees" AS e
+INNER JOIN "EmployeeRoles" AS e0 ON e."EmployeeRoleId" = e0."Id"
+INNER JOIN "EmployeeLevels" AS e1 ON e."EmployeeLevelId" = e1."Id"
+WHERE e."Id" = @__EmployeeId_0
+LIMIT 1
+2024-11-21 01:19:38.159 +05:30 [INF] Handled GetEmployeeQuery with Ardalis.Result.Result`1[Bytestrone.AppraisalSystem.UseCases.Employees.EmployeeDTO] in 2 ms
+2024-11-21 01:19:38.159 +05:30 [INF] Executed endpoint 'HTTP: GET /Employees/{EmployeeId:int}'
+2024-11-21 01:19:38.159 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/Employees/1 - 200 null application/json; charset=utf-8 3.6515ms
+2024-11-21 01:19:38.323 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/Employees/1 - null null
+2024-11-21 01:19:38.323 +05:30 [INF] CORS policy execution successful.
+2024-11-21 01:19:38.323 +05:30 [INF] Executing endpoint 'HTTP: GET /Employees/{EmployeeId:int}'
+2024-11-21 01:19:38.323 +05:30 [INF] Handling GetEmployeeQuery
+2024-11-21 01:19:38.323 +05:30 [INF] Property EmployeeId : 1
+2024-11-21 01:19:38.326 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__EmployeeId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Address", e."CreatedAt", e."Email", e."EmployeeLevelId", e."EmployeeRoleId", e."IsActive", e."JoinDate", e."ModifiedAt", e."Name", e."PhoneNumber", e0."Id", e0."Name", e1."Id", e1."Name"
+FROM "Employees" AS e
+INNER JOIN "EmployeeRoles" AS e0 ON e."EmployeeRoleId" = e0."Id"
+INNER JOIN "EmployeeLevels" AS e1 ON e."EmployeeLevelId" = e1."Id"
+WHERE e."Id" = @__EmployeeId_0
+LIMIT 1
+2024-11-21 01:19:38.326 +05:30 [INF] Handled GetEmployeeQuery with Ardalis.Result.Result`1[Bytestrone.AppraisalSystem.UseCases.Employees.EmployeeDTO] in 2 ms
+2024-11-21 01:19:38.327 +05:30 [INF] Executed endpoint 'HTTP: GET /Employees/{EmployeeId:int}'
+2024-11-21 01:19:38.327 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/Employees/1 - 200 null application/json; charset=utf-8 4.1019ms
+2024-11-21 01:19:38.328 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/Employees/1 - null null
+2024-11-21 01:19:38.328 +05:30 [INF] CORS policy execution successful.
+2024-11-21 01:19:38.328 +05:30 [INF] Executing endpoint 'HTTP: GET /Employees/{EmployeeId:int}'
+2024-11-21 01:19:38.328 +05:30 [INF] Handling GetEmployeeQuery
+2024-11-21 01:19:38.328 +05:30 [INF] Property EmployeeId : 1
+2024-11-21 01:19:38.330 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__EmployeeId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Address", e."CreatedAt", e."Email", e."EmployeeLevelId", e."EmployeeRoleId", e."IsActive", e."JoinDate", e."ModifiedAt", e."Name", e."PhoneNumber", e0."Id", e0."Name", e1."Id", e1."Name"
+FROM "Employees" AS e
+INNER JOIN "EmployeeRoles" AS e0 ON e."EmployeeRoleId" = e0."Id"
+INNER JOIN "EmployeeLevels" AS e1 ON e."EmployeeLevelId" = e1."Id"
+WHERE e."Id" = @__EmployeeId_0
+LIMIT 1
+2024-11-21 01:19:38.331 +05:30 [INF] Handled GetEmployeeQuery with Ardalis.Result.Result`1[Bytestrone.AppraisalSystem.UseCases.Employees.EmployeeDTO] in 2 ms
+2024-11-21 01:19:38.331 +05:30 [INF] Executed endpoint 'HTTP: GET /Employees/{EmployeeId:int}'
+2024-11-21 01:19:38.331 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/Employees/1 - 200 null application/json; charset=utf-8 3.1938ms
+2024-11-21 01:19:46.855 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/Employees/1 - null null
+2024-11-21 01:19:46.856 +05:30 [INF] CORS policy execution successful.
+2024-11-21 01:19:46.856 +05:30 [INF] Executing endpoint 'HTTP: GET /Employees/{EmployeeId:int}'
+2024-11-21 01:19:46.856 +05:30 [INF] Handling GetEmployeeQuery
+2024-11-21 01:19:46.856 +05:30 [INF] Property EmployeeId : 1
+2024-11-21 01:19:46.858 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__EmployeeId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Address", e."CreatedAt", e."Email", e."EmployeeLevelId", e."EmployeeRoleId", e."IsActive", e."JoinDate", e."ModifiedAt", e."Name", e."PhoneNumber", e0."Id", e0."Name", e1."Id", e1."Name"
+FROM "Employees" AS e
+INNER JOIN "EmployeeRoles" AS e0 ON e."EmployeeRoleId" = e0."Id"
+INNER JOIN "EmployeeLevels" AS e1 ON e."EmployeeLevelId" = e1."Id"
+WHERE e."Id" = @__EmployeeId_0
+LIMIT 1
+2024-11-21 01:19:46.858 +05:30 [INF] Handled GetEmployeeQuery with Ardalis.Result.Result`1[Bytestrone.AppraisalSystem.UseCases.Employees.EmployeeDTO] in 2 ms
+2024-11-21 01:19:46.859 +05:30 [INF] Executed endpoint 'HTTP: GET /Employees/{EmployeeId:int}'
+2024-11-21 01:19:46.859 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/Employees/1 - 200 null application/json; charset=utf-8 3.8205ms
+2024-11-21 01:19:46.859 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/Employees/1 - null null
+2024-11-21 01:19:46.859 +05:30 [INF] CORS policy execution successful.
+2024-11-21 01:19:46.859 +05:30 [INF] Executing endpoint 'HTTP: GET /Employees/{EmployeeId:int}'
+2024-11-21 01:19:46.860 +05:30 [INF] Handling GetEmployeeQuery
+2024-11-21 01:19:46.860 +05:30 [INF] Property EmployeeId : 1
+2024-11-21 01:19:46.861 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__EmployeeId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Address", e."CreatedAt", e."Email", e."EmployeeLevelId", e."EmployeeRoleId", e."IsActive", e."JoinDate", e."ModifiedAt", e."Name", e."PhoneNumber", e0."Id", e0."Name", e1."Id", e1."Name"
+FROM "Employees" AS e
+INNER JOIN "EmployeeRoles" AS e0 ON e."EmployeeRoleId" = e0."Id"
+INNER JOIN "EmployeeLevels" AS e1 ON e."EmployeeLevelId" = e1."Id"
+WHERE e."Id" = @__EmployeeId_0
+LIMIT 1
+2024-11-21 01:19:46.861 +05:30 [INF] Handled GetEmployeeQuery with Ardalis.Result.Result`1[Bytestrone.AppraisalSystem.UseCases.Employees.EmployeeDTO] in 1 ms
+2024-11-21 01:19:46.862 +05:30 [INF] Executed endpoint 'HTTP: GET /Employees/{EmployeeId:int}'
+2024-11-21 01:19:46.862 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/Employees/1 - 200 null application/json; charset=utf-8 2.5892ms
+2024-11-21 01:20:09.549 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/Employees/1 - null null
+2024-11-21 01:20:09.551 +05:30 [INF] CORS policy execution successful.
+2024-11-21 01:20:09.551 +05:30 [INF] Executing endpoint 'HTTP: GET /Employees/{EmployeeId:int}'
+2024-11-21 01:20:09.553 +05:30 [INF] Handling GetEmployeeQuery
+2024-11-21 01:20:09.553 +05:30 [INF] Property EmployeeId : 1
+2024-11-21 01:20:09.560 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__EmployeeId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Address", e."CreatedAt", e."Email", e."EmployeeLevelId", e."EmployeeRoleId", e."IsActive", e."JoinDate", e."ModifiedAt", e."Name", e."PhoneNumber", e0."Id", e0."Name", e1."Id", e1."Name"
+FROM "Employees" AS e
+INNER JOIN "EmployeeRoles" AS e0 ON e."EmployeeRoleId" = e0."Id"
+INNER JOIN "EmployeeLevels" AS e1 ON e."EmployeeLevelId" = e1."Id"
+WHERE e."Id" = @__EmployeeId_0
+LIMIT 1
+2024-11-21 01:20:09.562 +05:30 [INF] Handled GetEmployeeQuery with Ardalis.Result.Result`1[Bytestrone.AppraisalSystem.UseCases.Employees.EmployeeDTO] in 8 ms
+2024-11-21 01:20:09.563 +05:30 [INF] Executed endpoint 'HTTP: GET /Employees/{EmployeeId:int}'
+2024-11-21 01:20:09.563 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/Employees/1 - 200 null application/json; charset=utf-8 13.5417ms
+2024-11-21 01:20:09.563 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/Employees/1 - null null
+2024-11-21 01:20:09.564 +05:30 [INF] CORS policy execution successful.
+2024-11-21 01:20:09.564 +05:30 [INF] Executing endpoint 'HTTP: GET /Employees/{EmployeeId:int}'
+2024-11-21 01:20:09.564 +05:30 [INF] Handling GetEmployeeQuery
+2024-11-21 01:20:09.564 +05:30 [INF] Property EmployeeId : 1
+2024-11-21 01:20:09.566 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__EmployeeId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Address", e."CreatedAt", e."Email", e."EmployeeLevelId", e."EmployeeRoleId", e."IsActive", e."JoinDate", e."ModifiedAt", e."Name", e."PhoneNumber", e0."Id", e0."Name", e1."Id", e1."Name"
+FROM "Employees" AS e
+INNER JOIN "EmployeeRoles" AS e0 ON e."EmployeeRoleId" = e0."Id"
+INNER JOIN "EmployeeLevels" AS e1 ON e."EmployeeLevelId" = e1."Id"
+WHERE e."Id" = @__EmployeeId_0
+LIMIT 1
+2024-11-21 01:20:09.566 +05:30 [INF] Handled GetEmployeeQuery with Ardalis.Result.Result`1[Bytestrone.AppraisalSystem.UseCases.Employees.EmployeeDTO] in 2 ms
+2024-11-21 01:20:09.567 +05:30 [INF] Executed endpoint 'HTTP: GET /Employees/{EmployeeId:int}'
+2024-11-21 01:20:09.567 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/Employees/1 - 200 null application/json; charset=utf-8 3.2315ms
