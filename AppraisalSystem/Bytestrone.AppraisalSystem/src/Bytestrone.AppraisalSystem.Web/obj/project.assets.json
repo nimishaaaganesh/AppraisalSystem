@@ -6749,21 +6749,21 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\NimishaGanesh\\.nuget\\packages\\": {}
+    "/Users/anoobsuresh/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\NimishaGanesh\\Desktop\\GitRepo\\nimisha.ganesh\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.Web\\Bytestrone.AppraisalSystem.Web.csproj",
+      "projectUniqueName": "/Users/anoobsuresh/Desktop/useless/Nimisha/AppraisalSystem/AppraisalSystem/Bytestrone.AppraisalSystem/src/Bytestrone.AppraisalSystem.Web/Bytestrone.AppraisalSystem.Web.csproj",
       "projectName": "Bytestrone.AppraisalSystem.Web",
-      "projectPath": "C:\\Users\\NimishaGanesh\\Desktop\\GitRepo\\nimisha.ganesh\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.Web\\Bytestrone.AppraisalSystem.Web.csproj",
-      "packagesPath": "C:\\Users\\NimishaGanesh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\NimishaGanesh\\Desktop\\GitRepo\\nimisha.ganesh\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.Web\\obj\\",
+      "projectPath": "/Users/anoobsuresh/Desktop/useless/Nimisha/AppraisalSystem/AppraisalSystem/Bytestrone.AppraisalSystem/src/Bytestrone.AppraisalSystem.Web/Bytestrone.AppraisalSystem.Web.csproj",
+      "packagesPath": "/Users/anoobsuresh/.nuget/packages/",
+      "outputPath": "/Users/anoobsuresh/Desktop/useless/Nimisha/AppraisalSystem/AppraisalSystem/Bytestrone.AppraisalSystem/src/Bytestrone.AppraisalSystem.Web/obj/",
       "projectStyle": "PackageReference",
       "centralPackageVersionsManagementEnabled": true,
       "configFilePaths": [
-        "C:\\Users\\NimishaGanesh\\Desktop\\GitRepo\\nimisha.ganesh\\AppraisalSystem\\Bytestrone.AppraisalSystem\\NuGet.Config",
-        "C:\\Users\\NimishaGanesh\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/anoobsuresh/Desktop/useless/Nimisha/AppraisalSystem/AppraisalSystem/Bytestrone.AppraisalSystem/NuGet.Config",
+        "/Users/anoobsuresh/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -6775,11 +6775,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\NimishaGanesh\\Desktop\\GitRepo\\nimisha.ganesh\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.Infrastructure\\Bytestrone.AppraisalSystem.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\NimishaGanesh\\Desktop\\GitRepo\\nimisha.ganesh\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.Infrastructure\\Bytestrone.AppraisalSystem.Infrastructure.csproj"
+            "/Users/anoobsuresh/Desktop/useless/Nimisha/AppraisalSystem/AppraisalSystem/Bytestrone.AppraisalSystem/src/Bytestrone.AppraisalSystem.Infrastructure/Bytestrone.AppraisalSystem.Infrastructure.csproj": {
+              "projectPath": "/Users/anoobsuresh/Desktop/useless/Nimisha/AppraisalSystem/AppraisalSystem/Bytestrone.AppraisalSystem/src/Bytestrone.AppraisalSystem.Infrastructure/Bytestrone.AppraisalSystem.Infrastructure.csproj"
             },
-            "C:\\Users\\NimishaGanesh\\Desktop\\GitRepo\\nimisha.ganesh\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.UseCases\\Bytestrone.AppraisalSystem.UseCases.csproj": {
-              "projectPath": "C:\\Users\\NimishaGanesh\\Desktop\\GitRepo\\nimisha.ganesh\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.UseCases\\Bytestrone.AppraisalSystem.UseCases.csproj"
+            "/Users/anoobsuresh/Desktop/useless/Nimisha/AppraisalSystem/AppraisalSystem/Bytestrone.AppraisalSystem/src/Bytestrone.AppraisalSystem.UseCases/Bytestrone.AppraisalSystem.UseCases.csproj": {
+              "projectPath": "/Users/anoobsuresh/Desktop/useless/Nimisha/AppraisalSystem/AppraisalSystem/Bytestrone.AppraisalSystem/src/Bytestrone.AppraisalSystem.UseCases/Bytestrone.AppraisalSystem.UseCases.csproj"
             }
           }
         }
@@ -6901,7 +6901,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

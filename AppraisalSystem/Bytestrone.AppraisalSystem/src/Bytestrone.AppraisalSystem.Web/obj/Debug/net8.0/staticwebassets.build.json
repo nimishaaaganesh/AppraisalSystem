@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8MTJB66JGaw7hwgIJL0uGraoZsolZcpBvmWmuNVAglM=",
+  "Hash": "61P7gLQM2HYCA5PYZNAFQ/Owk587ULhXVcyWtjNp0Vw=",
   "Source": "Bytestrone.AppraisalSystem.Web",
   "BasePath": "_content/Bytestrone.AppraisalSystem.Web",
   "Mode": "Default",
@@ -8,19 +8,19 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "Bytestrone.AppraisalSystem.Web\\wwwroot",
+      "Name": "Bytestrone.AppraisalSystem.Web/wwwroot",
       "Source": "Bytestrone.AppraisalSystem.Web",
-      "ContentRoot": "C:\\Users\\NimishaGanesh\\Desktop\\GitRepo\\nimisha.ganesh\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.Web\\wwwroot\\",
+      "ContentRoot": "/Users/anoobsuresh/Desktop/useless/Nimisha/AppraisalSystem/AppraisalSystem/Bytestrone.AppraisalSystem/src/Bytestrone.AppraisalSystem.Web/wwwroot/",
       "BasePath": "_content/Bytestrone.AppraisalSystem.Web",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\NimishaGanesh\\Desktop\\GitRepo\\nimisha.ganesh\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.Web\\wwwroot\\.gitkeep",
+      "Identity": "/Users/anoobsuresh/Desktop/useless/Nimisha/AppraisalSystem/AppraisalSystem/Bytestrone.AppraisalSystem/src/Bytestrone.AppraisalSystem.Web/wwwroot/.gitkeep",
       "SourceId": "Bytestrone.AppraisalSystem.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\NimishaGanesh\\Desktop\\GitRepo\\nimisha.ganesh\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.Web\\wwwroot\\",
+      "ContentRoot": "/Users/anoobsuresh/Desktop/useless/Nimisha/AppraisalSystem/AppraisalSystem/Bytestrone.AppraisalSystem/src/Bytestrone.AppraisalSystem.Web/wwwroot/",
       "BasePath": "_content/Bytestrone.AppraisalSystem.Web",
       "RelativePath": ".gitkeep",
       "AssetKind": "All",
@@ -33,7 +33,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\.gitkeep"
+      "OriginalItemSpec": "wwwroot/.gitkeep"
     }
   ]
 }
